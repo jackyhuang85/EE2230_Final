@@ -5,15 +5,15 @@
 `define OFF 2'b11
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 	Xuan-Jie Huang
 // 
 // Create Date:    18:05:34 06/09/2016 
 // Design Name: 
 // Module Name:    fan_speed 
-// Project Name: 
-// Target Devices: 
+// Project Name: 	MusicFan
+// Target Devices: 	EVS6
 // Tool versions: 
-// Description: 
+// Description: 	To generate the pulse to control the wind speed of fan.
 //
 // Dependencies: 
 //

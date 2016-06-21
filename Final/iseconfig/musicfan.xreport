@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-21T14:42:49</DateModified>
+  <DateModified>2016-06-21T17:30:37</DateModified>
   <ModuleName>musicfan</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/LogicLAB/finalpro/Final/iseconfig/musicfan.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LogicLAB/finalpro/Final\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/LogicLAB/finalpro/LogicDesignLab_FinalProject/Final/iseconfig/musicfan.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/LogicLAB/finalpro/LogicDesignLab_FinalProject/Final\</ImplementationReportsDirectory>
   <DateInitialized>2016-06-06T15:58:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
