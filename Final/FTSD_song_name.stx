@@ -1,0 +1,78 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/LogicLAB/Final/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to D:/LogicLAB/Final/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: FTSD_song_name.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\LogicLAB\Final\FTSD_song_name.v" into library work
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 21: Macro name 0 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 22: Macro name 1 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 23: Macro name 2 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 24: Macro name 3 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 25: Macro name 4 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 26: Macro name 5 starting with a number violates Verilog syntax
+WARNING:HDLCompiler:1509 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 27: Macro name 6 starting with a number violates Verilog syntax
+Parsing module <FTSD_song_name>.
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 66: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 67: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 68: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 69: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 79: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 80: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 81: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 82: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 92: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 93: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 94: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 95: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 105: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 106: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 107: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 108: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 118: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 119: Syntax error near ";".
+ERROR:HDLCompiler:806 - "D:\LogicLAB\Final\FTSD_song_name.v" Line 120: Syntax error near ";".
+Sorry, too many errors..
+--> 
+
+Total memory usage is 241568 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

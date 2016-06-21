@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\LogicLAB\Final\musicfan.ncd
+OUTFILE=D:\LogicLAB\Final\musicfan.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\LogicLAB\Final
+LICENSE=WebPack
+USER_INFO=211159954_0_0_979

@@ -1,0 +1,1308 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: musicfan.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "musicfan.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "musicfan"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : musicfan
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\LogicLAB\finalremote\ipcore_dir\ROM.v" into library work
+Parsing module <ROM>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\rom_ctrl.v" into library work
+Parsing module <rom_ctrl>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\LCDctl.v" into library work
+Parsing module <LCDctl>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\song_sel.v" into library work
+Parsing module <song_sel>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\shifter.v" into library work
+Parsing module <shifter>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\scan_ctl.v" into library work
+Parsing module <scan_ctl>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\one_pulse.v" into library work
+Parsing module <one_pulse>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\lcd_display.v" into library work
+Parsing module <lcd_display>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\keypad_scan.v" into library work
+Parsing verilog file "param.v" included at line 2.
+Parsing module <keypad_scan>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\FTSD_song_name.v" into library work
+Parsing module <FTSD_song_name>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\fsm_fan_speed.v" into library work
+Parsing verilog file "param.v" included at line 2.
+Parsing module <fsm_fan_speed>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\fsm2.v" into library work
+Parsing module <fsm2>.
+WARNING:HDLCompiler:568 - "D:\LogicLAB\finalremote\fsm2.v" Line 109: Constant value is truncated to fit in <6> bits.
+Analyzing Verilog file "D:\LogicLAB\finalremote\fsm.v" into library work
+Parsing module <fsm>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\freq_div_100Hz.v" into library work
+Parsing module <freqdiv>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\debounce_circuit.v" into library work
+Parsing module <debounce_circuit>.
+Analyzing Verilog file "D:\LogicLAB\finalremote\musicfan.v" into library work
+Parsing module <musicfan>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <musicfan>.
+
+Elaborating module <clk_div(counter_width=20,half_cycle=10000000)>.
+
+Elaborating module <fsm_fan_speed>.
+
+Elaborating module <fsm2>.
+
+Elaborating module <lcd_display>.
+
+Elaborating module <LCDctl>.
+
+Elaborating module <rom_ctrl>.
+
+Elaborating module <ROM>.
+WARNING:HDLCompiler:1499 - "D:\LogicLAB\finalremote\ipcore_dir\ROM.v" Line 39: Empty module <ROM> remains a black box.
+
+Elaborating module <clk_div(half_cycle=400,counter_width=9)>.
+
+Elaborating module <keypad_scan>.
+WARNING:HDLCompiler:1127 - "D:\LogicLAB\finalremote\musicfan.v" Line 75: Assignment to pressed ignored, since the identifier is never used
+
+Elaborating module <clk_div(counter_width=4,half_cycle=15)>.
+
+Elaborating module <clk_div(counter_width=25,half_cycle=20000000)>.
+
+Elaborating module <debounce_circuit>.
+
+Elaborating module <one_pulse>.
+
+Elaborating module <fsm>.
+
+Elaborating module <song_sel>.
+
+Elaborating module <shifter>.
+
+Elaborating module <freqdiv>.
+
+Elaborating module <scan_ctl>.
+
+Elaborating module <FTSD_song_name>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <musicfan>.
+    Related source file is "D:\LogicLAB\finalremote\musicfan.v".
+INFO:Xst:3210 - "D:\LogicLAB\finalremote\musicfan.v" line 73: Output port <pressed> of the instance <KEYPAD> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <musicfan> synthesized.
+
+Synthesizing Unit <clk_div_1>.
+    Related source file is "D:\LogicLAB\finalremote\clk_div.v".
+        counter_width = 20
+        half_cycle = 10000000
+    Found 1-bit register for signal <clk_div>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <clk_div_1> synthesized.
+
+Synthesizing Unit <fsm_fan_speed>.
+    Related source file is "D:\LogicLAB\finalremote\fsm_fan_speed.v".
+    Found 2-bit register for signal <speed>.
+    Found 4x2-bit Read Only RAM for signal <_n0021>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 D-type flip-flop(s).
+Unit <fsm_fan_speed> synthesized.
+
+Synthesizing Unit <fsm2>.
+    Related source file is "D:\LogicLAB\finalremote\fsm2.v".
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <fsm2> synthesized.
+
+Synthesizing Unit <lcd_display>.
+    Related source file is "D:\LogicLAB\finalremote\lcd_display.v".
+    Summary:
+	no macro.
+Unit <lcd_display> synthesized.
+
+Synthesizing Unit <LCDctl>.
+    Related source file is "D:\LogicLAB\finalremote\LCDctl.v".
+    Found 7-bit register for signal <counter_y>.
+    Found 7-bit register for signal <idle_counter>.
+    Found 4-bit register for signal <counter_page>.
+    Found 8-bit register for signal <lcd_data>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <data_request>.
+    Found 1-bit register for signal <lcd_di>.
+    Found 1-bit register for signal <lcd_en>.
+    Found 1-bit register for signal <left_right_image>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <idle_counter[6]_GND_7_o_add_39_OUT> created at line 157.
+    Found 7-bit adder for signal <counter_y[6]_GND_7_o_add_51_OUT> created at line 176.
+    Found 4-bit adder for signal <counter_page[3]_GND_7_o_add_52_OUT> created at line 177.
+    Found 1-bit adder for signal <left_right_image_PWR_6_o_add_55_OUT<0>> created at line 184.
+    Found 4x2-bit Read Only RAM for signal <speed_image>
+    Found 4-bit comparator greater for signal <n0008> created at line 132
+    Found 7-bit comparator greater for signal <n0038> created at line 149
+    Found 7-bit comparator greater for signal <counter_y[6]_GND_7_o_LessThan_49_o> created at line 170
+    WARNING:Xst:2404 -  FFs/Latches <lcd_rw<0:0>> (without init value) have a constant value of 0 in block <LCDctl>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  31 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <LCDctl> synthesized.
+
+Synthesizing Unit <rom_ctrl>.
+    Related source file is "D:\LogicLAB\finalremote\rom_ctrl.v".
+    Found 6-bit register for signal <counter_byte>.
+    Found 512-bit register for signal <mem>.
+    Found 8-bit register for signal <data>.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <counter_word>.
+    Found 1-bit register for signal <data_ack>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_531_OUT> created at line 98.
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_533_OUT> created at line 99.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_535_OUT> created at line 100.
+    Found 7-bit subtractor for signal <GND_8_o_GND_8_o_sub_537_OUT> created at line 101.
+    Found 4-bit adder for signal <counter_word[3]_GND_8_o_add_3_OUT> created at line 78.
+    Found 6-bit adder for signal <counter_byte[5]_GND_8_o_add_521_OUT> created at line 93.
+    Found 4-bit subtractor for signal <GND_8_o_GND_8_o_sub_5_OUT<3:0>> created at line 79.
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_523_OUT<8:0>> created at line 94.
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_525_OUT<8:0>> created at line 95.
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_527_OUT<8:0>> created at line 96.
+    Found 9-bit subtractor for signal <GND_8_o_GND_8_o_sub_529_OUT<8:0>> created at line 97.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_523_o> created at line 94.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_525_o> created at line 95.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_527_o> created at line 96.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_529_o> created at line 97.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_531_o> created at line 98.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_533_o> created at line 99.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_535_o> created at line 100.
+    Found 1-bit 512-to-1 multiplexer for signal <GND_8_o_mem[511]_Mux_537_o> created at line 101.
+    Found 9-bit 3-to-1 multiplexer for signal <addr_rom> created at line 63.
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred 531 D-type flip-flop(s).
+	inferred 528 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rom_ctrl> synthesized.
+
+Synthesizing Unit <clk_div_2>.
+    Related source file is "D:\LogicLAB\finalremote\clk_div.v".
+        counter_width = 9
+        half_cycle = 400
+    Found 9-bit register for signal <count>.
+    Found 1-bit register for signal <clk_div>.
+    Found 9-bit adder for signal <count[8]_GND_10_o_add_1_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div_2> synthesized.
+
+Synthesizing Unit <keypad_scan>.
+    Related source file is "D:\LogicLAB\finalremote\keypad_scan.v".
+    Found 1-bit register for signal <keypad_state>.
+    Found 4-bit register for signal <key>.
+    Found 4-bit register for signal <pause>.
+    Found 4-bit register for signal <sel_row>.
+    Found 1-bit register for signal <pressed>.
+    Found 4-bit adder for signal <sel_row_nx> created at line 21.
+    Found 4-bit adder for signal <pause[3]_GND_11_o_add_30_OUT> created at line 132.
+    Found 4x4-bit Read Only RAM for signal <_n0089>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <keypad_scan> synthesized.
+
+Synthesizing Unit <clk_div_3>.
+    Related source file is "D:\LogicLAB\finalremote\clk_div.v".
+        counter_width = 4
+        half_cycle = 15
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <clk_div>.
+    Found 4-bit adder for signal <count[3]_GND_13_o_add_1_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div_3> synthesized.
+
+Synthesizing Unit <clk_div_4>.
+    Related source file is "D:\LogicLAB\finalremote\clk_div.v".
+        counter_width = 25
+        half_cycle = 20000000
+    Found 25-bit register for signal <count>.
+    Found 1-bit register for signal <clk_div>.
+    Found 25-bit adder for signal <count[24]_GND_14_o_add_1_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div_4> synthesized.
+
+Synthesizing Unit <debounce_circuit>.
+    Related source file is "D:\LogicLAB\finalremote\debounce_circuit.v".
+    Found 4-bit register for signal <debounce_tmp>.
+    Found 1-bit register for signal <debounce_out>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <debounce_circuit> synthesized.
+
+Synthesizing Unit <one_pulse>.
+    Related source file is "D:\LogicLAB\finalremote\one_pulse.v".
+    Found 1-bit register for signal <in_trig_tmp>.
+    Found 1-bit register for signal <one_pulse_out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <one_pulse> synthesized.
+
+Synthesizing Unit <fsm>.
+    Related source file is "D:\LogicLAB\finalremote\fsm.v".
+    Found 1-bit register for signal <state_now>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <fsm> synthesized.
+
+Synthesizing Unit <song_sel>.
+    Related source file is "D:\LogicLAB\finalremote\song_sel.v".
+    Found 3-bit register for signal <song_sel>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <song_sel> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "D:\LogicLAB\finalremote\shifter.v".
+    Found 3-bit register for signal <Q7>.
+    Found 3-bit register for signal <Q5>.
+    Found 3-bit register for signal <Q2>.
+    Found 3-bit register for signal <Q4>.
+    Found 3-bit register for signal <Q3>.
+    Found 3-bit register for signal <Q1>.
+    Found 3-bit register for signal <Q6>.
+    Found 3-bit register for signal <Q0>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <shifter> synthesized.
+
+Synthesizing Unit <freqdiv>.
+    Related source file is "D:\LogicLAB\finalremote\freq_div_100Hz.v".
+    Found 2-bit register for signal <clk_ftsd_scan>.
+    Found 16-bit register for signal <clk_buffer_low>.
+    Found 18-bit adder for signal <clk_cnt> created at line 10.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <freqdiv> synthesized.
+
+Synthesizing Unit <scan_ctl>.
+    Related source file is "D:\LogicLAB\finalremote\scan_ctl.v".
+    Found 4x4-bit Read Only RAM for signal <ftsd_ctl>
+    Found 3-bit 4-to-1 multiplexer for signal <ftsd> created at line 10.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <scan_ctl> synthesized.
+
+Synthesizing Unit <FTSD_song_name>.
+    Related source file is "D:\LogicLAB\finalremote\FTSD_song_name.v".
+    Found 15-bit 7-to-1 multiplexer for signal <display> created at line 56.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <FTSD_song_name> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 4x2-bit single-port Read Only RAM                     : 2
+ 4x4-bit single-port Read Only RAM                     : 2
+# Adders/Subtractors                                   : 21
+ 1-bit adder                                           : 1
+ 18-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 6
+# Registers                                            : 42
+ 1-bit register                                        : 15
+ 16-bit register                                       : 1
+ 2-bit register                                        : 2
+ 25-bit register                                       : 1
+ 3-bit register                                        : 9
+ 4-bit register                                        : 7
+ 512-bit register                                      : 1
+ 6-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 7-bit comparator greater                              : 2
+# Multiplexers                                         : 581
+ 1-bit 2-to-1 multiplexer                              : 16
+ 1-bit 512-to-1 multiplexer                            : 8
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 15-bit 7-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 21-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 23-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 2
+ 26-bit 2-to-1 multiplexer                             : 1
+ 27-bit 2-to-1 multiplexer                             : 1
+ 28-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 3-bit 4-to-1 multiplexer                              : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 1
+ 34-bit 2-to-1 multiplexer                             : 1
+ 35-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 1
+ 37-bit 2-to-1 multiplexer                             : 1
+ 38-bit 2-to-1 multiplexer                             : 1
+ 39-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 10
+ 40-bit 2-to-1 multiplexer                             : 1
+ 41-bit 2-to-1 multiplexer                             : 1
+ 42-bit 2-to-1 multiplexer                             : 1
+ 43-bit 2-to-1 multiplexer                             : 1
+ 44-bit 2-to-1 multiplexer                             : 1
+ 45-bit 2-to-1 multiplexer                             : 1
+ 46-bit 2-to-1 multiplexer                             : 1
+ 47-bit 2-to-1 multiplexer                             : 1
+ 48-bit 2-to-1 multiplexer                             : 1
+ 49-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 6
+ 50-bit 2-to-1 multiplexer                             : 1
+ 51-bit 2-to-1 multiplexer                             : 1
+ 52-bit 2-to-1 multiplexer                             : 1
+ 53-bit 2-to-1 multiplexer                             : 1
+ 54-bit 2-to-1 multiplexer                             : 1
+ 55-bit 2-to-1 multiplexer                             : 1
+ 56-bit 2-to-1 multiplexer                             : 1
+ 57-bit 2-to-1 multiplexer                             : 1
+ 58-bit 2-to-1 multiplexer                             : 1
+ 59-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 7
+ 60-bit 2-to-1 multiplexer                             : 1
+ 61-bit 2-to-1 multiplexer                             : 1
+ 62-bit 2-to-1 multiplexer                             : 1
+ 63-bit 2-to-1 multiplexer                             : 1
+ 64-bit 2-to-1 multiplexer                             : 449
+ 7-bit 2-to-1 multiplexer                              : 11
+ 8-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 3
+ 9-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ROM.ngc>.
+Loading core <ROM> for timing and area information for instance <R1>.
+WARNING:Xst:1710 - FF/Latch <clk_div> (without init value) has a constant value of 0 in block <clk_2Hz>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <LCDctl>.
+The following registers are absorbed into counter <idle_counter>: 1 register on signal <idle_counter>.
+The following registers are absorbed into counter <left_right_image>: 1 register on signal <left_right_image>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_speed_image> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <speed>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <speed_image>   |          |
+    -----------------------------------------------------------------------
+Unit <LCDctl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clk_div_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div_3>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clk_div_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div_4>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clk_div_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fsm_fan_speed>.
+INFO:Xst:3217 - HDL ADVISOR - Register <speed> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0021> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <key<1:0>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fsm_fan_speed> synthesized (advanced).
+
+Synthesizing (advanced) Unit <keypad_scan>.
+The following registers are absorbed into counter <sel_row>: 1 register on signal <sel_row>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0089> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <sel_row<1:0>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <keypad_scan> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom_ctrl>.
+The following registers are absorbed into counter <counter_word>: 1 register on signal <counter_word>.
+The following registers are absorbed into counter <counter_byte>: 1 register on signal <counter_byte>.
+Unit <rom_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <scan_ctl>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ftsd_ctl> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ftsd_ctl_en>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ftsd_ctl>      |          |
+    -----------------------------------------------------------------------
+Unit <scan_ctl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 4x2-bit single-port distributed Read Only RAM         : 2
+ 4x4-bit single-port distributed Read Only RAM         : 2
+# Adders/Subtractors                                   : 13
+ 18-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 6
+# Counters                                             : 8
+ 1-bit up counter                                      : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 612
+ Flip-Flops                                            : 612
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 7-bit comparator greater                              : 2
+# Multiplexers                                         : 575
+ 1-bit 2-to-1 multiplexer                              : 16
+ 1-bit 512-to-1 multiplexer                            : 8
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 15-bit 7-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 21-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 23-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 1
+ 26-bit 2-to-1 multiplexer                             : 1
+ 27-bit 2-to-1 multiplexer                             : 1
+ 28-bit 2-to-1 multiplexer                             : 1
+ 29-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 3-bit 4-to-1 multiplexer                              : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 1
+ 34-bit 2-to-1 multiplexer                             : 1
+ 35-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 1
+ 37-bit 2-to-1 multiplexer                             : 1
+ 38-bit 2-to-1 multiplexer                             : 1
+ 39-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 8
+ 40-bit 2-to-1 multiplexer                             : 1
+ 41-bit 2-to-1 multiplexer                             : 1
+ 42-bit 2-to-1 multiplexer                             : 1
+ 43-bit 2-to-1 multiplexer                             : 1
+ 44-bit 2-to-1 multiplexer                             : 1
+ 45-bit 2-to-1 multiplexer                             : 1
+ 46-bit 2-to-1 multiplexer                             : 1
+ 47-bit 2-to-1 multiplexer                             : 1
+ 48-bit 2-to-1 multiplexer                             : 1
+ 49-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 6
+ 50-bit 2-to-1 multiplexer                             : 1
+ 51-bit 2-to-1 multiplexer                             : 1
+ 52-bit 2-to-1 multiplexer                             : 1
+ 53-bit 2-to-1 multiplexer                             : 1
+ 54-bit 2-to-1 multiplexer                             : 1
+ 55-bit 2-to-1 multiplexer                             : 1
+ 56-bit 2-to-1 multiplexer                             : 1
+ 57-bit 2-to-1 multiplexer                             : 1
+ 58-bit 2-to-1 multiplexer                             : 1
+ 59-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 6
+ 60-bit 2-to-1 multiplexer                             : 1
+ 61-bit 2-to-1 multiplexer                             : 1
+ 62-bit 2-to-1 multiplexer                             : 1
+ 63-bit 2-to-1 multiplexer                             : 1
+ 64-bit 2-to-1 multiplexer                             : 449
+ 7-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 2
+ 9-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <clk_div> (without init value) has a constant value of 0 in block <clk_div_1>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSMLED/FSM_0> on signal <state[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00000001
+ 001   | 00000010
+ 010   | 00000100
+ 011   | 00001000
+ 100   | 00010000
+ 101   | 00100000
+ 110   | 01000000
+ 111   | 10000000
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <LCD_DISPLAY/U_LCDctl/FSM_1> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <LCD_DISPLAY/U_romctrl/FSM_2> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <state_FSM_FFd7> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd6> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd5> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd4> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd3> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd2> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd1> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd8> (without init value) has a constant value of 1 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <state_FSM_FFd2> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <state_FSM_FFd2> (without init value) has a constant value of 0 in block <fsm2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <musicfan> ...
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <keypad_scan> ...
+
+Optimizing unit <song_sel> ...
+
+Optimizing unit <debounce_circuit> ...
+
+Optimizing unit <LCDctl> ...
+
+Optimizing unit <rom_ctrl> ...
+
+Optimizing unit <freqdiv> ...
+
+Optimizing unit <shifter> ...
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <KEYPAD/pressed> of sequential type is unconnected in block <musicfan>.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FSMLED/state_FSM_FFd2> (without init value) has a constant value of 0 in block <musicfan>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block musicfan, actual ratio is 14.
+FlipFlop LCD_DISPLAY/U_LCDctl/counter_y_6 has been replicated 1 time(s)
+FlipFlop LCD_DISPLAY/U_LCDctl/state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_byte_0 has been replicated 6 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_byte_1 has been replicated 6 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_word_0 has been replicated 1 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_word_1 has been replicated 1 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_word_2 has been replicated 1 time(s)
+FlipFlop LCD_DISPLAY/U_romctrl/counter_word_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <musicfan> :
+	Found 4-bit shift register for signal <SHIFTER/Q4_2>.
+Unit <musicfan> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 689
+ Flip-Flops                                            : 689
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : musicfan.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1054
+#      GND                         : 2
+#      INV                         : 10
+#      LUT1                        : 42
+#      LUT2                        : 51
+#      LUT3                        : 24
+#      LUT4                        : 46
+#      LUT5                        : 21
+#      LUT6                        : 753
+#      MUXCY                       : 49
+#      MUXF7                       : 2
+#      VCC                         : 2
+#      XORCY                       : 52
+# FlipFlops/Latches                : 693
+#      FDC                         : 117
+#      FDCE                        : 557
+#      FDP                         : 9
+#      FDPE                        : 10
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 76
+#      IBUF                        : 14
+#      OBUF                        : 62
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             693  out of  18224     3%  
+ Number of Slice LUTs:                  948  out of   9112    10%  
+    Number used as Logic:               947  out of   9112    10%  
+    Number used as Memory:                1  out of   2176     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    979
+   Number with an unused Flip Flop:     286  out of    979    29%  
+   Number with an unused LUT:            31  out of    979     3%  
+   Number of fully used LUT-FF pairs:   662  out of    979    67%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          77
+ Number of bonded IOBs:                  77  out of    232    33%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                             | Load  |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                                             | 80    |
+clk_De/clk_div                     | NONE(DEBOUNCE_PAUSE/debounce_out)                                                                                                                 | 5     |
+LCD_DISPLAY/clk50k/clk_div         | BUFG                                                                                                                                              | 586   |
+clk_1Hz/clk_div                    | BUFG                                                                                                                                              | 25    |
+LCD_DISPLAY/U_romctrl/R1/N1        | NONE(LCD_DISPLAY/U_romctrl/R1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 2     |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.894ns (Maximum Frequency: 204.323MHz)
+   Minimum input arrival time before clock: 4.607ns
+   Maximum output required time after clock: 6.373ns
+   Maximum combinational path delay: 4.537ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.158ns (frequency: 240.500MHz)
+  Total number of paths / destination ports: 1729 / 85
+-------------------------------------------------------------------------
+Delay:               4.158ns (Levels of Logic = 3)
+  Source:            clk_1Hz/count_17 (FF)
+  Destination:       clk_1Hz/count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_1Hz/count_17 to clk_1Hz/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  clk_1Hz/count_17 (clk_1Hz/count_17)
+     LUT6:I0->O            1   0.203   0.808  clk_1Hz/GND_14_o_GND_14_o_equal_1_o<24>4 (clk_1Hz/GND_14_o_GND_14_o_equal_1_o<24>3)
+     LUT6:I3->O           26   0.205   1.207  clk_1Hz/GND_14_o_GND_14_o_equal_1_o<24>5 (clk_1Hz/GND_14_o_GND_14_o_equal_1_o)
+     LUT2:I1->O            1   0.205   0.000  clk_1Hz/Mcount_count_eqn_241 (clk_1Hz/Mcount_count_eqn_24)
+     FDC:D                     0.102          clk_1Hz/count_24
+    ----------------------------------------
+    Total                      4.158ns (1.162ns logic, 2.996ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_De/clk_div'
+  Clock period: 1.599ns (frequency: 625.293MHz)
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Delay:               1.599ns (Levels of Logic = 1)
+  Source:            DEBOUNCE_PAUSE/debounce_tmp_2 (FF)
+  Destination:       DEBOUNCE_PAUSE/debounce_out (FF)
+  Source Clock:      clk_De/clk_div rising
+  Destination Clock: clk_De/clk_div rising
+
+  Data Path: DEBOUNCE_PAUSE/debounce_tmp_2 to DEBOUNCE_PAUSE/debounce_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.845  DEBOUNCE_PAUSE/debounce_tmp_2 (DEBOUNCE_PAUSE/debounce_tmp_2)
+     LUT4:I1->O            1   0.205   0.000  DEBOUNCE_PAUSE/debounce_next<3>1 (DEBOUNCE_PAUSE/debounce_next)
+     FDC:D                     0.102          DEBOUNCE_PAUSE/debounce_out
+    ----------------------------------------
+    Total                      1.599ns (0.754ns logic, 0.845ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LCD_DISPLAY/clk50k/clk_div'
+  Clock period: 4.894ns (frequency: 204.323MHz)
+  Total number of paths / destination ports: 6442 / 1159
+-------------------------------------------------------------------------
+Delay:               4.894ns (Levels of Logic = 4)
+  Source:            LCD_DISPLAY/U_LCDctl/counter_y_4 (FF)
+  Destination:       LCD_DISPLAY/U_LCDctl/counter_y_6 (FF)
+  Source Clock:      LCD_DISPLAY/clk50k/clk_div rising
+  Destination Clock: LCD_DISPLAY/clk50k/clk_div rising
+
+  Data Path: LCD_DISPLAY/U_LCDctl/counter_y_4 to LCD_DISPLAY/U_LCDctl/counter_y_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   1.089  LCD_DISPLAY/U_LCDctl/counter_y_4 (LCD_DISPLAY/U_LCDctl/counter_y_4)
+     LUT6:I1->O           10   0.203   0.857  LCD_DISPLAY/U_LCDctl/state_FSM_FFd2-In111 (LCD_DISPLAY/U_LCDctl/state_FSM_FFd2-In11)
+     LUT5:I4->O            1   0.205   0.808  LCD_DISPLAY/U_LCDctl/_n0230_inv1 (LCD_DISPLAY/U_LCDctl/_n0230_inv1)
+     LUT6:I3->O            7   0.205   0.774  LCD_DISPLAY/U_LCDctl/_n0230_inv4_rstpot (LCD_DISPLAY/U_LCDctl/_n0230_inv4_rstpot)
+     LUT3:I2->O            1   0.205   0.000  LCD_DISPLAY/U_LCDctl/counter_y_1_dpot (LCD_DISPLAY/U_LCDctl/counter_y_1_dpot)
+     FDCE:D                    0.102          LCD_DISPLAY/U_LCDctl/counter_y_1
+    ----------------------------------------
+    Total                      4.894ns (1.367ns logic, 3.527ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_1Hz/clk_div'
+  Clock period: 2.302ns (frequency: 434.433MHz)
+  Total number of paths / destination ports: 25 / 24
+-------------------------------------------------------------------------
+Delay:               2.302ns (Levels of Logic = 1)
+  Source:            SHIFTER/Mshreg_Q4_2 (FF)
+  Destination:       SHIFTER/Q4_2 (FF)
+  Source Clock:      clk_1Hz/clk_div rising
+  Destination Clock: clk_1Hz/clk_div rising
+
+  Data Path: SHIFTER/Mshreg_Q4_2 to SHIFTER/Q4_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.313   0.684  SHIFTER/Mshreg_Q4_2 (SHIFTER/Mshreg_Q4_2)
+     LUT2:I0->O            1   0.203   0.000  SHIFTER/Mshreg_Q4_21 (SHIFTER/Mshreg_Q4_21)
+     FDPE:D                    0.102          SHIFTER/Q4_2
+    ----------------------------------------
+    Total                      2.302ns (1.618ns logic, 0.684ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 164 / 92
+-------------------------------------------------------------------------
+Offset:              4.607ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       FSM_SPEED/speed_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to FSM_SPEED/speed_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            693   0.206   2.133  FSMLED/rst_n_inv51_INV_0 (DEBOUNCE_PAUSE/rst_n_inv)
+     FDC:CLR                   0.430          FSM_PAUSE/state_now
+    ----------------------------------------
+    Total                      4.607ns (1.858ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_De/clk_div'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.607ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       DEBOUNCE_PAUSE/debounce_out (FF)
+  Destination Clock: clk_De/clk_div rising
+
+  Data Path: rst_n to DEBOUNCE_PAUSE/debounce_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            693   0.206   2.133  FSMLED/rst_n_inv51_INV_0 (DEBOUNCE_PAUSE/rst_n_inv)
+     FDC:CLR                   0.430          DEBOUNCE_PAUSE/debounce_tmp_0
+    ----------------------------------------
+    Total                      4.607ns (1.858ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LCD_DISPLAY/clk50k/clk_div'
+  Total number of paths / destination ports: 584 / 584
+-------------------------------------------------------------------------
+Offset:              4.607ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       LCD_DISPLAY/U_LCDctl/state_FSM_FFd1 (FF)
+  Destination Clock: LCD_DISPLAY/clk50k/clk_div rising
+
+  Data Path: rst_n to LCD_DISPLAY/U_LCDctl/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            693   0.206   2.133  FSMLED/rst_n_inv51_INV_0 (DEBOUNCE_PAUSE/rst_n_inv)
+     FDC:CLR                   0.430          LCD_DISPLAY/U_LCDctl/lcd_en
+    ----------------------------------------
+    Total                      4.607ns (1.858ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1Hz/clk_div'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.607ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       SHIFTER/Q7_1 (FF)
+  Destination Clock: clk_1Hz/clk_div rising
+
+  Data Path: rst_n to SHIFTER/Q7_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            693   0.206   2.133  FSMLED/rst_n_inv51_INV_0 (DEBOUNCE_PAUSE/rst_n_inv)
+     FDC:CLR                   0.430          SHIFTER/Q6_0
+    ----------------------------------------
+    Total                      4.607ns (1.858ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 118 / 24
+-------------------------------------------------------------------------
+Offset:              6.373ns (Levels of Logic = 3)
+  Source:            FREQDIV/clk_ftsd_scan_0 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: FREQDIV/clk_ftsd_scan_0 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.167  FREQDIV/clk_ftsd_scan_0 (FREQDIV/clk_ftsd_scan_0)
+     LUT6:I0->O            8   0.203   1.167  SCAN_CTL/Mmux_ftsd31 (ftsd<2>)
+     LUT6:I0->O            2   0.203   0.616  FTSD/display<14>1 (display_11_OBUF)
+     OBUF:I->O                 2.571          display_14_OBUF (display<14>)
+    ----------------------------------------
+    Total                      6.373ns (3.424ns logic, 2.949ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD_DISPLAY/clk50k/clk_div'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.485ns (Levels of Logic = 2)
+  Source:            LCD_DISPLAY/U_LCDctl/left_right_image (FF)
+  Destination:       lcd_cs<1> (PAD)
+  Source Clock:      LCD_DISPLAY/clk50k/clk_div rising
+
+  Data Path: LCD_DISPLAY/U_LCDctl/left_right_image to lcd_cs<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  LCD_DISPLAY/U_LCDctl/left_right_image (LCD_DISPLAY/U_LCDctl/left_right_image)
+     INV:I->O              1   0.206   0.579  LCD_DISPLAY/U_LCDctl/Result1_INV_0 (lcd_cs_1_OBUF)
+     OBUF:I->O                 2.571          lcd_cs_1_OBUF (lcd_cs<1>)
+    ----------------------------------------
+    Total                      4.485ns (3.224ns logic, 1.261ns route)
+                                       (71.9% logic, 28.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1Hz/clk_div'
+  Total number of paths / destination ports: 120 / 10
+-------------------------------------------------------------------------
+Offset:              6.071ns (Levels of Logic = 3)
+  Source:            SHIFTER/Q1_2 (FF)
+  Destination:       display<14> (PAD)
+  Source Clock:      clk_1Hz/clk_div rising
+
+  Data Path: SHIFTER/Q1_2 to display<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.864  SHIFTER/Q1_2 (SHIFTER/Q1_2)
+     LUT6:I2->O            8   0.203   1.167  SCAN_CTL/Mmux_ftsd31 (ftsd<2>)
+     LUT6:I0->O            2   0.203   0.616  FTSD/display<14>1 (display_11_OBUF)
+     OBUF:I->O                 2.571          display_14_OBUF (display<14>)
+    ----------------------------------------
+    Total                      6.071ns (3.424ns logic, 2.647ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               4.537ns (Levels of Logic = 2)
+  Source:            dip2 (PAD)
+  Destination:       led<15> (PAD)
+
+  Data Path: dip2 to led<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  dip2_IBUF (dip2_IBUF)
+     OBUF:I->O                 2.571          led_15_OBUF (led<15>)
+    ----------------------------------------
+    Total                      4.537ns (3.793ns logic, 0.744ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock LCD_DISPLAY/clk50k/clk_div
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+LCD_DISPLAY/clk50k/clk_div|    4.894|         |         |         |
+clk                       |    2.480|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.158|         |         |         |
+clk_De/clk_div |    1.473|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_1Hz/clk_div
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_1Hz/clk_div|    2.302|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_De/clk_div
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_De/clk_div |    1.599|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.58 secs
+ 
+--> 
+
+Total memory usage is 387060 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

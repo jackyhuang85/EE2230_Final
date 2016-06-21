@@ -1,0 +1,38 @@
+
+NET "rst_n" LOC = N3;
+NET "clk" LOC = R10;
+
+NET "au_appsel" LOC = H18;
+NET "au_bck" LOC = K16;
+NET "au_sysclk" LOC = H17;
+NET "au_ws" LOC = L15;
+NET "au_data" LOC = L16;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_cs[0]" LOC = E1;
+NET "lcd_cs[1]" LOC = F4;
+NET "lcd_d[7]" LOC = F3;
+NET "lcd_d[6]" LOC = D2;
+NET "lcd_d[5]" LOC = D1;
+NET "lcd_d[4]" LOC = H7;
+NET "lcd_d[3]" LOC = G6;
+NET "lcd_d[2]" LOC = E4;
+NET "lcd_d[1]" LOC = D3;
+NET "lcd_d[0]" LOC = F6;
+NET "dip" LOC = C8; //b6
+NET "lcd_di" LOC = C1;
+NET "lcd_e" LOC = F5;
+NET "lcd_rst" LOC = E3;
+NET "lcd_rw" LOC = C2;
+NET "fan_dic" LOC = D6; //a2
+NET "fan_spd" LOC = C6;	//b2
+NET "data_request" LOC = H5;
+NET "data_ack" LOC = H6;
+NET "speed[1]" LOC = A8;	//a7
+NET "speed[0]" LOC = D8;	//a6
+NET "song_sel[2]" LOC = G13; //b18
+NET "song_sel[1]" LOC = D17;	//b17
+NET "song_sel[0]" LOC = C18;	//b16
+//NET "pause" LOC = D18;
+NET "pb_pause" LOC = T2;

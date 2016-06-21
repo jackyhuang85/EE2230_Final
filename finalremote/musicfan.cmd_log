@@ -1,0 +1,90 @@
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 
+xst -intstyle ise -ifn "D:/LogicLAB/finalremote/musicfan.xst" -ofn "D:/LogicLAB/finalremote/musicfan.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ShiftReg.ucf -p xc6slx16-csg324-3 musicfan.ngc musicfan.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o musicfan_map.ncd musicfan.ngd musicfan.pcf 
+par -w -intstyle ise -ol high -mt off musicfan_map.ncd musicfan.ncd musicfan.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml musicfan.twx musicfan.ncd -o musicfan.twr musicfan.pcf -ucf ShiftReg.ucf 
+bitgen -intstyle ise -f musicfan.ut musicfan.ncd 

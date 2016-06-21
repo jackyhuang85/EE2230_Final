@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jun 20 00:08:07 2016
+# Process ID: 8196
+# Log file: D:/LogicLAB/Final/planAhead_run_2/planAhead.log
+# Journal file: D:/LogicLAB/Final/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/LogicLAB/Final/pa.fromNetlist.tcl
+# create_project -name Final -dir "D:/LogicLAB/Final/planAhead_run_2" -part xc6slx16csg324-3
+create_project: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 438.422 ; gain = 68.785
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/LogicLAB/Final/musicfan.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/LogicLAB/Final} {ipcore_dir} }
+# add_files [list {ipcore_dir/ROM.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "ShiftReg.ucf" [current_fileset -constrset]
+Adding file 'D:/LogicLAB/Final/ShiftReg.ucf' to fileset 'constrs_1'
+# add_files [list {ShiftReg.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design musicfan.ngc ...
+WARNING:NetListWriters:298 - No output is written to musicfan.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_cy[8 : 2] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_lut[6 : 3] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus SONG_CTL/_n2822[78 : 3] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus FAN_SPEED/speed_lim[10 : 2] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file musicfan.edif ...
+ngc2edif: Total memory usage is 101896 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/Final.data/cache/musicfan_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Final.data/cache/musicfan_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ROM.edif ...
+ngc2edif: Total memory usage is 89608 kilobytes
+
+Reading core file 'D:/LogicLAB/Final/ipcore_dir/ROM.ngc' for (cell view 'ROM', library 'musicfan_lib', file 'musicfan.ngc')
+Parsing EDIF File [./planAhead_run_2/Final.data/cache/ROM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Final.data/cache/ROM_ngc_zx.edif]
+WARNING: [Netlist 29-43] Netlist 'musicfan' is not ideal for floorplanning, since the cellview 'musicfan' defined in file 'musicfan.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/LogicLAB/Final/ipcore_dir/ROM.ncf]
+Finished Parsing UCF File [D:/LogicLAB/Final/ipcore_dir/ROM.ncf]
+Parsing UCF File [D:/LogicLAB/Final/ShiftReg.ucf]
+Finished Parsing UCF File [D:/LogicLAB/Final/ShiftReg.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 92642281
+link_design: Time (s): elapsed = 00:00:19 . Memory (MB): peak = 619.953 ; gain = 181.531
+startgroup
+set_property package_pin T2 [get_ports {button[5]}]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports {button[4]}]
+endgroup
+startgroup
+set_property package_pin U2 [get_ports {button[3]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {button[2]}]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports {button[1]}]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports {button[0]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {lcd_cs[1]}]
+endgroup
+startgroup
+set_property package_pin F4 [get_ports {lcd_cs[0]}]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports {lcd_d[7]}]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports {lcd_d[6]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {lcd_d[5]}]
+endgroup
+startgroup
+set_property package_pin H7 [get_ports {lcd_d[4]}]
+endgroup
+startgroup
+set_property package_pin G6 [get_ports {lcd_d[3]}]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports {lcd_d[2]}]
+endgroup
+startgroup
+set_property package_pin D3 [get_ports {lcd_d[1]}]
+endgroup
+startgroup
+set_property package_pin F6 [get_ports {lcd_d[0]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports button_music_pp]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports dip]
+endgroup
+set_property package_pin "" [get_ports [list  fan_dic]]
+startgroup
+set_property package_pin C1 [get_ports lcd_di]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports lcd_e]
+endgroup
+startgroup
+set_property package_pin E3 [get_ports lcd_rst]
+endgroup
+startgroup
+set_property package_pin C2 [get_ports lcd_rw]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports fan_dic]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports fan_spd]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/LogicLAB/Final\planAhead_pid8196.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jun 20 00:17:08 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

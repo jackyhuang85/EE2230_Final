@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jun 20 00:08:07 2016
+# Process ID: 8196
+# Log file: D:/LogicLAB/Final/planAhead_run_2/planAhead.log
+# Journal file: D:/LogicLAB/Final/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/LogicLAB/Final/pa.fromNetlist.tcl
+startgroup
+set_property package_pin T2 [get_ports {button[5]}]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports {button[4]}]
+endgroup
+startgroup
+set_property package_pin U2 [get_ports {button[3]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {button[2]}]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports {button[1]}]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports {button[0]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {lcd_cs[1]}]
+endgroup
+startgroup
+set_property package_pin F4 [get_ports {lcd_cs[0]}]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports {lcd_d[7]}]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports {lcd_d[6]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {lcd_d[5]}]
+endgroup
+startgroup
+set_property package_pin H7 [get_ports {lcd_d[4]}]
+endgroup
+startgroup
+set_property package_pin G6 [get_ports {lcd_d[3]}]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports {lcd_d[2]}]
+endgroup
+startgroup
+set_property package_pin D3 [get_ports {lcd_d[1]}]
+endgroup
+startgroup
+set_property package_pin F6 [get_ports {lcd_d[0]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports button_music_pp]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports dip]
+endgroup
+set_property package_pin "" [get_ports [list  fan_dic]]
+startgroup
+set_property package_pin C1 [get_ports lcd_di]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports lcd_e]
+endgroup
+startgroup
+set_property package_pin E3 [get_ports lcd_rst]
+endgroup
+startgroup
+set_property package_pin C2 [get_ports lcd_rw]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports fan_dic]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports fan_spd]
+endgroup
+save_constraints

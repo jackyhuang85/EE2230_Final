@@ -1,0 +1,46 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    22:53:09 06/19/2016 
+// Design Name: 
+// Module Name:    Shifter 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Shifter(
+    input clk,
+    input rst_n,
+    output reg [7:0]shift_reg
+    );
+	 
+	 always @(posedge clk or negedge rst_n)  
+    begin	 
+		if (~rst_n)                      //reset the value of Q    
+		begin   
+			shift_reg <= 8'b01010101;     //Q become 01010101    
+		end
+		
+		else                               //if no reset    
+		begin           
+			shift_reg[0] <= shift_reg[7];                //shift Q from 01010101            
+			shift_reg[1] <= shift_reg[0];                //to 10101010           
+			shift_reg[2] <= shift_reg[1];           
+			shift_reg[3] <= shift_reg[2];              
+			shift_reg[4] <= shift_reg[3];     
+			shift_reg[5] <= shift_reg[4];     
+			shift_reg[6] <= shift_reg[5];     
+			shift_reg[7] <= shift_reg[6];    
+		end 
+	 end
+endmodule

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\LogicLAB\finalremote\musicfan.ncd
+OUTFILE=D:\LogicLAB\finalremote\musicfan.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\LogicLAB\finalremote
+LICENSE=WebPack
+USER_INFO=211159954_0_0_979

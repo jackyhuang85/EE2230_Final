@@ -1,0 +1,74 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design musicfan.ngc ...
+WARNING:NetListWriters:298 - No output is written to musicfan.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_cy[8 : 2] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_lut[6 : 3] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus SONG_CTL/_n2822[78 : 3] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus FAN_SPEED/speed_lim[10 : 2] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file musicfan.edif ...
+ngc2edif: Total memory usage is 101896 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design musicfan.ngc ...
+WARNING:NetListWriters:298 - No output is written to musicfan.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_cy[8 : 2] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_lut[6 : 3] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus SONG_CTL/_n2822[78 : 3] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus FAN_SPEED/speed_lim[10 : 2] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file musicfan.edif ...
+ngc2edif: Total memory usage is 101896 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design musicfan.ngc ...
+WARNING:NetListWriters:298 - No output is written to musicfan.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_cy[8 : 2] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus FAN_DIRECT/Maccum_direct_lut[6 : 3] on
+   block musicfan is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus SONG_CTL/_n2822[78 : 3] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus FAN_SPEED/speed_lim[10 : 2] on block
+   musicfan is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file musicfan.edif ...
+ngc2edif: Total memory usage is 101896 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to ROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ROM.edif ...
+ngc2edif: Total memory usage is 89608 kilobytes
+
