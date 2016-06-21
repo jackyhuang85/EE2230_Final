@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer:  Pei-Rong Li
 // 
 // Create Date:    15:52:03 05/30/2016 
 // Design Name: 
 // Module Name:    fsm2 
-// Project Name: 
-// Target Devices: 
+// Project Name:    MusicFan
+// Target Devices:  EVS6
 // Tool versions: 
 // Description: 
 //
