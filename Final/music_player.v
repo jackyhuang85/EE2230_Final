@@ -1,15 +1,15 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 	Pei-Rong Li
 // 
 // Create Date:    15:44:24 06/09/2016 
 // Design Name: 
 // Module Name:    music_player 
-// Project Name: 
-// Target Devices: 
+// Project Name: 	MusicFan
+// Target Devices: 	EVS6
 // Tool versions: 
-// Description: 
+// Description: 	
 //
 // Dependencies: 
 //
